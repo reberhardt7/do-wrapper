@@ -141,7 +141,7 @@ export default class Droplets extends BaseModule {
      * @param dropletId the identifier of the Droplet
      * @returns Promise
      */
-    public getById(dropletId: string): Promise<any> {
+    public getById(dropletId: number): Promise<any> {
         return this._execute({
             actionPath: `${this.basePath}/${encodeURIComponent(dropletId)}`,
         });
@@ -152,7 +152,7 @@ export default class Droplets extends BaseModule {
      * @param dropletId the identifier of the Droplet
      * @returns Promise
      */
-    public deleteById(dropletId: string): Promise<any> {
+    public deleteById(dropletId: number): Promise<any> {
         return this._execute({
             actionPath: `${this.basePath}/${encodeURIComponent(dropletId)}`,
             method: HttpMethods.DELETE,

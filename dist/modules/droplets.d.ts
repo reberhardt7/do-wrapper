@@ -65,13 +65,13 @@ export default class Droplets extends BaseModule {
      * @param dropletId the identifier of the Droplet
      * @returns Promise
      */
-    getById(dropletId: string): Promise<any>;
+    getById(dropletId: number): Promise<any>;
     /**
      * Delete a Droplet by its identifier
      * @param dropletId the identifier of the Droplet
      * @returns Promise
      */
-    deleteById(dropletId: string): Promise<any>;
+    deleteById(dropletId: number): Promise<any>;
     /**
      * Delete all Droplets with a given Tag
      * @param tagName the Tag to delete Droplets for
