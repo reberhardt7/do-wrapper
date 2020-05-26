@@ -10,6 +10,6 @@ export interface DropletCreationRequest {
     user_data: any;
     monitoring: boolean;
     volumes: string[];
-    tags: string;
+    tags: string[];
     vpc_uuid?: string;
 }
